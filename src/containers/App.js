@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
 //components
 import NavBar from '../components/NavBar/NavBar';
 import Quote from '../components/Quote/Quote';
@@ -8,6 +13,8 @@ import AboutMe from '../components/AboutMe/AboutMe';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Skills from '../components/Skills/Skills';
 import Footer from '../components/Footer/Footer';
+
+library.add(fab, faEnvelope);
 
 class App extends Component {
 	constructor(props) {

@@ -202,6 +202,26 @@
 .about-me-container p {
   font-size: 1.25em;
 }
+.about-me-container button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  margin-right: 30px;
+  border: #FFFFFF solid 2px;
+  border-radius: 50%;
+  background-color: #CFDBD5;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px gray;
+  outline: none;
+}
+.about-me-container button:hover {
+  background-color: #162936;
+  box-shadow: 0px 4px 4px 0px gray;
+}
+.about-me-container button:active {
+  box-shadow: 0px 2px 2px 0px gray;
+}
 
 .skills-container {
   display: flex;
