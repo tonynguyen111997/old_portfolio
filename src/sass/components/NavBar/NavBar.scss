@@ -1,0 +1,103 @@
+$color-scheme-one: #CFDBD5; 
+$color-scheme-two: #284B63; 
+$color-scheme-three: #FFFFFF;
+$color-scheme-four: #242423;
+$color-scheme-five: #333533; 
+$button-width: 150px;
+$button-height: 45px;
+
+%default-box-shadow{
+	box-shadow: 0px 2px 2px 0px gray;
+}
+
+@mixin keyframes($animationName){
+	@keyframes #{$animationName} {
+		@content
+	}
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+	animation-duration: $duration;
+	animation-iteration-count: $iteration;
+	animation-name: $name;
+	animation-direction: $direction;
+}
+
+@include keyframes(shake) {
+	0% { transform: rotate(0deg);	}
+	25% { transform: rotate(0.75deg); }
+	75% { transform: rotate(-0.75deg); }
+	100% { transform: rotate(0deg) ; }
+}
+
+@mixin shake {
+	@include animate(shake, 0.6s, infinite, normal);
+}
+
+.nav{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 75px;
+	width: 100%;
+	background-color: $color-scheme-two;
+	box-shadow: 0px 2px 2px 0px gray;
+
+	.title{
+		width: 100%;
+		text-align: center;
+		color: white;
+	}
+
+	.nav-button-list{
+		display: flex;
+		margin-right: 100px;
+	}
+
+	button {
+		@extend %default-box-shadow;
+		position: relative;
+		width: $button-width;
+		height: $button-height;
+		background-color: $color-scheme-three;
+		border: none;
+		border-radius: 5px;
+		margin-right: 20px;
+		transition: all 0.3s;
+		outline: none;
+		cursor: pointer;
+		color: $color-scheme-two;
+		&:hover{
+			@include shake;
+			background-color: $color-scheme-one;
+			color: black;
+		}
+		&:active:after{
+			box-shadow: none;
+		}
+		&:after{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			border-radius: 5px;
+			box-shadow: 0px 4px 4px 0px gray;
+			transition: opacity 0.3s;
+		}
+		&:hover:after{
+			opacity: 1;
+		}
+	}
+
+}

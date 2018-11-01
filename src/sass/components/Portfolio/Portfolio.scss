@@ -1,0 +1,27 @@
+@import '../NavBar/NavBar';
+@import '../AboutMe/AboutMe';
+
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	background-color: $color-scheme-three;
+	margin: 0px auto;
+
+	h2{
+		@include section-header;
+		transition: opacity 1s;
+	}
+}
+
+.card-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	width: 90%;
+	transition: opacity 1s;
+}
