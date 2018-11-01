@@ -16,10 +16,23 @@
     transform: rotate(0deg);
   }
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 .nav {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -32,6 +45,20 @@
   background-color: #284B63;
   box-shadow: 0px 2px 2px 0px gray;
 }
+@media screen and (max-width: 1000px) {
+  .nav-bar {
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 359px) {
+  .nav-bar {
+    height: 100px;
+  }
+}
 .nav-bar .title {
   width: 100%;
   text-align: center;
@@ -39,7 +66,22 @@
 }
 .nav-bar .nav-button-list {
   display: flex;
-  margin-right: 100px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .nav-bar .nav-button-list {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 359px) {
+  .nav-bar .nav-button-list {
+    display: none;
+  }
 }
 .nav-bar button {
   position: relative;
@@ -48,11 +90,17 @@
   background-color: #FFFFFF;
   border: none;
   border-radius: 5px;
-  margin-right: 20px;
+  margin: 0px 10px;
   transition: all 0.3s;
   outline: none;
   cursor: pointer;
   color: #284B63;
+}
+@media screen and (max-width: 510px) {
+  .nav-bar button {
+    width: 100px;
+    height: -55px;
+  }
 }
 .nav-bar button:hover {
   animation-duration: 0.6s;
@@ -84,20 +132,21 @@
 
 .footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #284B63;
   width: 100%;
   height: 150px;
 }
 .footer .footer-btn-container {
   margin-top: 10px;
+  height: 100px;
 }
 .footer button {
   border: none;
   height: 50px;
   width: 50px;
-  margin: 10px;
-  margin-right: 30px;
+  margin: 10px 20px;
   border: #FFFFFF solid 2px;
   border-radius: 50%;
   background-color: #CFDBD5;
@@ -108,9 +157,16 @@
 .footer button:hover {
   background-color: #162936;
   box-shadow: 0px 4px 4px 0px gray;
+  animation-duration: 0.6s;
+  animation-iteration-count: 2;
+  animation-name: bounce;
+  animation-direction: normal;
 }
 .footer button:active {
   box-shadow: 0px 2px 2px 0px gray;
 }
+.footer p {
+  color: #FFFFFF;
+}
 
-/*# sourceMappingURL=footer.css.map */
+/*# sourceMappingURL=Footer.css.map */

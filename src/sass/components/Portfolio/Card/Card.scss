@@ -87,6 +87,9 @@
 	transition: opacity 0.5s, left 0.5s;
 	font-size: 25px;
 	border: $color-scheme-two solid 2px;
+	@media screen and (max-width: 1000px) { 
+		font-size: 1em;
+	}
 
 	img{
 		display: block;
@@ -94,6 +97,10 @@
 		min-width: 500px;
 		height: auto;
 		border-radius: 10px;
+		@media screen and (max-width: 1000px) {
+			min-width: 100px;
+			max-width: 90%;
+		}
 	}
 
 	div{
@@ -106,9 +113,9 @@
 		float: right;
 		border: none;
 		border-radius: 50%;
-		background-color: rgb(230, 0, 0);
+		background-color: $color-scheme-one;
 		outline: none;
-		color: white;
+		color: $color-scheme-three;
 		width: 40px;
 		height: 40px;
 		margin: 5px;
