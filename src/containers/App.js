@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 
@@ -19,7 +18,7 @@ import './App.css';
 
 library.add(fab, faEnvelope);
 
-class App extends React.PureComponent {
+class App extends PureComponent {
 	constructor(props) {
 		super(props);
 		this.state = {

@@ -7,7 +7,7 @@ const AboutMe = ({aboutOpac}) => {
 		<div id="about-me-container" className="about-me">
 			<div className="about-me-container" style={{opacity: aboutOpac}}>
 				<h2>About Me</h2>
-				<img alt="my image" id="about" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest?cb=20170330235552" />
+				<img alt="Tony Nguyen" id="about" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest?cb=20170330235552" />
 				<p>Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
 				Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
 				Etiam magna ligula, ultricies pharetra mauris quis.</p>
@@ -15,7 +15,7 @@ const AboutMe = ({aboutOpac}) => {
 					<button>
 						<FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
 					</button>
-					<button>
+					<button onClick={()=> window.open('https://github.com/tonynguyen111997')}>
 						<FontAwesomeIcon icon={['fab', 'github']} size="2x" />
 					</button>
 					<button>

@@ -59,11 +59,11 @@ class Card extends Component {
 
 	}
 	render() {
-		const { id, img } = this.props;
+		const { id, img, alt} = this.props;
 		return (
 			<div>
 				<div id={id} className="card">
-					<img src={img} />
+					<img src={img} alt={alt}/>
 					<p className="small-card-info">Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
 						Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
 						Etiam magna ligula, ultricies pharetra mauris quis.</p>
@@ -75,7 +75,7 @@ class Card extends Component {
 					<button onClick={this.toggleLargeCard}>
 						<p><strong>X</strong></p>
 					</button>
-					<img src={img} />
+					<img src={img} alt={alt}/>
 					<div>
 						<p>Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
 						Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
