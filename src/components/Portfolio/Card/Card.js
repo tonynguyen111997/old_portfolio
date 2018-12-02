@@ -2,6 +2,10 @@ import React, { Component} from 'react';
 
 import './Card.css'
 
+//components
+import LargeCard from './LargeCard/LargeCard';
+import SmallCard from './SmallCard/SmallCard';
+
 class Card extends Component {
 	constructor(props){
 		super(props);
@@ -62,26 +66,8 @@ class Card extends Component {
 		const { id, img, alt} = this.props;
 		return (
 			<div>
-				<div id={id} className="card">
-					<img src={img} alt={alt}/>
-					<p className="small-card-info">Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
-						Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
-						Etiam magna ligula, ultricies pharetra mauris quis.</p>
-					<button id="btn-more" className="btn-more" style={this.state.btnStyle} onClick={this.toggleLargeCard}>
-						<p>More Info</p>
-					</button>
-				</div>
-				<div className="large-card" style={this.state.largeCardStyle}>
-					<button onClick={this.toggleLargeCard}>
-						<p><strong>X</strong></p>
-					</button>
-					<img src={img} alt={alt}/>
-					<div>
-						<p>Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
-						Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
-						Etiam magna ligula, ultricies pharetra mauris quis. {id} </p>
-					</div>
-				</div>
+				<SmallCard btnStyle={this.state.btnStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt} />
+				<LargeCard style={this.state.largeCardStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt}/>
 			</div>
 		);
 	}
