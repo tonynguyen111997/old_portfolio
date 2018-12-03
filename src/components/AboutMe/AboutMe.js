@@ -1,6 +1,8 @@
 import React from 'react'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './AboutMe.css';
+
+//components
+import SocialNetworksButtons from '../SocialNetworksButtons/SocialNetworksButtons';
 
 const AboutMe = ({aboutOpac}) => {
 	return (
@@ -11,20 +13,7 @@ const AboutMe = ({aboutOpac}) => {
 				<p>Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
 				Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
 				Etiam magna ligula, ultricies pharetra mauris quis.</p>
-				<div className="about-me-btn-container">
-					<button>
-						<FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
-					</button>
-					<button onClick={()=> window.open('https://github.com/tonynguyen111997')}>
-						<FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-					</button>
-					<button>
-						<FontAwesomeIcon icon={['fab', 'codepen']} size="2x" />
-					</button>
-					<button>
-						<FontAwesomeIcon icon="envelope" size="2x" />
-					</button>
-				</div>
+				<SocialNetworksButtons containerClass="about-me-btn-container"/>
 			</div>
 		</div>
 	);

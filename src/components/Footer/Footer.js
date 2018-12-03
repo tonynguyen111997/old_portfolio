@@ -1,26 +1,12 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Footer.css';
 
-
+import SocialNetworksButtons from '../SocialNetworksButtons/SocialNetworksButtons';
 
 const Footer = () => {
 	return (
 		<div className="footer">
-			<div className="footer-btn-container">
-				<button>
-					<FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" />
-				</button>
-				<button>
-					<FontAwesomeIcon icon={['fab', 'github']} size="2x" />
-				</button>
-				<button>
-					<FontAwesomeIcon icon={['fab', 'codepen']} size="2x" />
-				</button>
-				<button>
-					<FontAwesomeIcon icon="envelope" size="2x" />
-				</button>
-			</div>
+			<SocialNetworksButtons containerClass="footer-btn-container" />
 			<p>Created by Tony Nguyen</p>
 		</div>
 	);
