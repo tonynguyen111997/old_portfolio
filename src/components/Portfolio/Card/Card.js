@@ -63,11 +63,11 @@ class Card extends Component {
 
 	}
 	render() {
-		const { id, img, alt} = this.props;
+		const { id, img, alt, smallDesc, largeDesc, link} = this.props;
 		return (
 			<div>
-				<SmallCard btnStyle={this.state.btnStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt} />
-				<LargeCard style={this.state.largeCardStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt}/>
+				<SmallCard btnStyle={this.state.btnStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt} desc={smallDesc}/>
+				<LargeCard style={this.state.largeCardStyle} onToggleLargeCard={this.toggleLargeCard} id={id} img={img} alt={alt} desc={largeDesc} link={link}/>
 			</div>
 		);
 	}
