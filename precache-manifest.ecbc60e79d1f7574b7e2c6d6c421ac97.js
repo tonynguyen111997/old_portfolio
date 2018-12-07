@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/smilur.af5a582a.png"
   },
   {
-    "revision": "052e817a49661d465641",
-    "url": "/portfolio/static/css/main.bf49289f.chunk.css"
+    "revision": "dc67f5ef19aba165f450",
+    "url": "/portfolio/static/css/main.c60806cd.chunk.css"
   },
   {
     "revision": "22617285756d69d02c68",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fcc_riverside.4c1a6b44.png"
   },
   {
-    "revision": "052e817a49661d465641",
-    "url": "/portfolio/static/js/main.052e817a.chunk.js"
+    "revision": "dc67f5ef19aba165f450",
+    "url": "/portfolio/static/js/main.dc67f5ef.chunk.js"
   },
   {
     "revision": "60c087af416a8d0dffd49dac8d53a70b",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/weather_forecast.241d3621.png"
   },
   {
-    "revision": "f4c318d34e6328316c55b8d256525581",
+    "revision": "5cf10b064b53ef8c0e559323c129cc6c",
     "url": "/portfolio/index.html"
   }
 ];
