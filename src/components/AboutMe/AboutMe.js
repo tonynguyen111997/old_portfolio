@@ -1,6 +1,9 @@
 import React from 'react'; 
 import './AboutMe.css';
 
+//self-portrait img
+import selfImg from '../../public/about-me/self-portrait.jpg';
+
 //components
 import SocialNetworksButtons from '../SocialNetworksButtons/SocialNetworksButtons';
 
@@ -9,7 +12,9 @@ const AboutMe = ({aboutOpac}) => {
 		<div id="about-me-container" className="about-me">
 			<div className="about-me-container" style={{opacity: aboutOpac}}>
 				<h2>About Me</h2>
-				<img alt="Tony Nguyen" id="about" src="https://vignette.wikia.nocookie.net/project-pokemon/images/4/47/Placeholder.png/revision/latest?cb=20170330235552" />
+				<img alt="self portrait" id="about" src={selfImg} />
+				<h3>Tony Nguyen</h3>
+				<h4>tonynguyen111997@gmail.com</h4>
 				<h3>Junior Full Stack Web Developer</h3>
 				<p>Self taught web developer looking to further develop web development skills. 
 				I am a passionate learner that is eager to gain more experience.

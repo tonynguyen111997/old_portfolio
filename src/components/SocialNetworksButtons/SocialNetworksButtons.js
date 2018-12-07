@@ -13,9 +13,9 @@ const SocialNetworksButtons = ({ containerClass }) => {
       <button onClick={() => window.open('https://codepen.io/Tonynguyen111997/pens/public/')}>
         <FontAwesomeIcon icon={['fab', 'codepen']} size="2x" />
       </button>
-      <button>
+      {/* <button>
         <FontAwesomeIcon icon="envelope" size="2x" />
-      </button>
+      </button> */}
     </div>
   );
 }
