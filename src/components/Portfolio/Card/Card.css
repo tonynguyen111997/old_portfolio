@@ -218,6 +218,11 @@
     height: 90%;
   }
 }
+@media screen and (max-width: 360px) {
+  .large-card {
+    font-size: 0.75em;
+  }
+}
 .large-card a {
   margin: 25px auto;
 }
@@ -259,6 +264,13 @@
 }
 .large-card button:active {
   box-shadow: 0px 2px 2px 0px gray;
+}
+@media screen and (max-width: 360px) {
+  .large-card button {
+    height: 25px;
+    width: 25px;
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=Card.css.map */
