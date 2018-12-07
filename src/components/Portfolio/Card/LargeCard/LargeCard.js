@@ -1,16 +1,21 @@
 import React from 'react';
 
-const LargeCard = ({ style, onToggleLargeCard, id, img, alt }) => {
+const LargeCard = ({ style, onToggleLargeCard, id, img, alt, desc, link }) => {
   return (
     <div className="large-card" style={style}>
       <button onClick={onToggleLargeCard}>
         <p><strong>X</strong></p>
       </button>
-      <img src={img} alt={alt}/>
+        {/* <a href=""><img src={img} alt={alt}/></a> */}
+        { link ? 
+          <a href={link}>
+            <img src={img} alt={alt} />
+          </a>
+        : 
+          <img src={img} alt={alt} />
+        }
       <div>
-        <p>Loremes ipsum dolor sit amet, consectetur adipiscing elit. 
-        Morbi egestas leo vel felis pulvinar, sed consequat justo sodales. 
-        Etiam magna ligula, ultricies pharetra mauris quis. {id} </p>
+        <p>{desc}</p>
       </div>
     </div>
   );
