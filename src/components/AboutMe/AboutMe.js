@@ -15,7 +15,7 @@ const AboutMe = ({aboutOpac}) => {
 				<img alt="self portrait" id="about" src={selfImg} />
 				<h3>Tony Nguyen</h3>
 				<h4>tonynguyen111997@gmail.com</h4>
-				<h3>Junior Full Stack Web Developer</h3>
+				<h3>Web Developer</h3>
 				<p>Self taught web developer looking to further develop web development skills. 
 				I am a passionate learner that is eager to gain more experience.
 				Learning to program has been a passion of mine for more than a year now. A key aspect of 
