@@ -352,14 +352,18 @@
 .skills-container .skills {
   display: flex;
   justify-content: center;
-  height: 300px;
-  width: 100%;
+  width: 500px;
   flex-wrap: wrap;
   transition: opacity 3s;
 }
 .skills-container .skills img {
   width: 100px;
   height: 100px;
+}
+@media screen and (max-width: 600px) {
+  .skills-container .skills {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=Skills.css.map */
