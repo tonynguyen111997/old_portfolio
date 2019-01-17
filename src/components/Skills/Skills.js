@@ -21,8 +21,7 @@ const Skills = ({skillsOpac}) => {
 				<img alt="SQL icon" src="https://cdn0.iconfinder.com/data/icons/superuser-extension-light/512/675277-data_database_sql_query-512.png" />
 				<img alt="PostgreSQL logo" src="https://safenet.gemalto.com/uploadedImages/images/Logos/postgresql-logo.png" />
 				<img alt="MySQL logo" src="https://cdn.iconscout.com/icon/free/png-256/mysql-6-226028.png" />
-				<img style={{width: "216px", height: 77}} alt="Knex logo" src="https://knexjs.org/assets/images/knex.png" />
-				<img style={{width: "171px", height: 77}} alt="Sequelize Logo" src="https://www.vectorlogo.zone/logos/sequelizejs/sequelizejs-card.png" />
+				<img alt="Knex logo" src="https://cdn.worldvectorlogo.com/logos/knex-1.svg" />
 			</div>
 		</div>
 	);
