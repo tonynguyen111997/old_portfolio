@@ -18,7 +18,7 @@ const AboutMe = ({aboutOpac}) => {
 				<h3>Web Developer</h3>
 				<p>Self taught web developer looking to further develop web development skills. 
 				I am a passionate learner that is eager to gain more experience.
-				Learning to program has been a passion of mine for more than a year now. A key aspect of 
+				Learning to program has been a passion of mine for many years now. A key aspect of 
 				programming that has kept me interested in it is the problem solving.
 				I enjoy problem solving, as it gives me a challenge and the opportunity to develop my 
 				critical thinking skills. Currently I have experience with HTML, CSS, Bootstrap, 
