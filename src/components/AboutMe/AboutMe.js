@@ -1,5 +1,5 @@
 import React from 'react'; 
-import './AboutMe.css';
+import './AboutMe.scss';
 
 //self-portrait img
 import selfImg from '../../public/about-me/self-portrait.jpg';

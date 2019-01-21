@@ -1,4 +1,4 @@
-@import '../NavBar/NavBar';
+@import '../Nav/NavBar/NavBar';
 
 .quote-container{
 	display: flex;
@@ -8,10 +8,6 @@
 	width: 100%;
 	margin: 100px 0;
 	height: 400px;
-	// background-color: $color-scheme-three;
-	@media screen and (max-width: 1000px) {
-		margin-top: 200px;
-	}
 	p{
 		width: 50%;
 		font-size: 2.5em;
