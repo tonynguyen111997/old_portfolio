@@ -15,6 +15,7 @@ const Skills = ({skillsOpac}) => {
 				<img alt="redux logo" src="https://avatars0.githubusercontent.com/u/13142323?s=400&v=4"/>
 				<img alt="express.js logo" src="https://www.atatus.com/images/devicon/icon-express.svg"/>
 				<img alt="node.js logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNF2a5ZVtpCNlzLJgzk3biHx22qZVijBA8jO1Q40oUoDu1qNYl"/>
+				<img alt="bootstrap logo" src="https://devstickers.com/assets/img/cat/bootstrap.png" />
 				<img alt="sass logo" src="https://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png"/>
 				<img alt="git logo" src="https://www.gitdvcs.com/img/logo/git-orange-light-backgroun-stacked.svg"/>
 				<img alt="GitHub logo" src="https://image.flaticon.com/icons/svg/25/25231.svg" />
