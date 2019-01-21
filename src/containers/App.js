@@ -13,7 +13,7 @@ import Portfolio from '../components/Portfolio/Portfolio';
 import Skills from '../components/Skills/Skills';
 import Footer from '../components/Footer/Footer';
 
-import './App.css';
+import './App.scss';
 
 library.add(fab, faEnvelope);
 

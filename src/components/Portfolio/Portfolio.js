@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Portfolio.css';
+import './Portfolio.scss';
 
 //portfolio imgs
 import fccImg from '../../public/portfolio/fcc_riverside.png';
