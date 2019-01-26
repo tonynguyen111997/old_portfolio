@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/smilur.af5a582a.png"
   },
   {
-    "revision": "ff74c05c8f790acc4c5a",
-    "url": "/portfolio/static/css/main.d4be0b3b.chunk.css"
+    "revision": "14d72940a1bd4a36cb66",
+    "url": "/portfolio/static/css/main.b59a2cc1.chunk.css"
   },
   {
-    "revision": "22617285756d69d02c68",
-    "url": "/portfolio/static/js/1.22617285.chunk.js"
+    "revision": "64fa7aa4a28e7467286a",
+    "url": "/portfolio/static/js/1.64fa7aa4.chunk.js"
   },
   {
     "revision": "ee2a100325fd284f0097",
@@ -20,12 +20,16 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/self-portrait.57d4b7e0.jpg"
   },
   {
+    "revision": "e9d9240b085f27a73d25069ebf8396db",
+    "url": "/portfolio/static/media/ledkyb.e9d9240b.png"
+  },
+  {
     "revision": "4c1a6b4461b5629d860b538f13179121",
     "url": "/portfolio/static/media/fcc_riverside.4c1a6b44.png"
   },
   {
-    "revision": "ff74c05c8f790acc4c5a",
-    "url": "/portfolio/static/js/main.ff74c05c.chunk.js"
+    "revision": "14d72940a1bd4a36cb66",
+    "url": "/portfolio/static/js/main.14d72940.chunk.js"
   },
   {
     "revision": "60c087af416a8d0dffd49dac8d53a70b",
@@ -48,7 +52,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/weather_forecast.241d3621.png"
   },
   {
-    "revision": "1e13fd0f99a17833444f29a0080e4b24",
+    "revision": "766887a6e6c6bdbf4befcaae9e26a412",
     "url": "/portfolio/index.html"
   }
 ];
