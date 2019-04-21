@@ -1,9 +1,6 @@
 import React from 'react'; 
 import './AboutMe.scss';
 
-//self-portrait img
-import selfImg from '../../public/about-me/self-portrait.jpg';
-
 //components
 import SocialNetworksButtons from '../SocialNetworksButtons/SocialNetworksButtons';
 
@@ -19,8 +16,8 @@ const AboutMe = ({aboutOpac}) => {
 				<p>
 					Self taught web developer that is always looking to grow and improve. 
 					I am a passionate learner that is always eager to gain more experience. Learning 
-					to program has been a passion of mine for many years now, because there will always 
-					be something new to learn. I enjoy solving real life problems by developing technologies 
+					to program has been a passion of mine for many years now, because there is always 
+					something new to learn. I enjoy solving real life problems by developing technologies 
 					that solve them. 
 				</p>
 				<SocialNetworksButtons containerClass="about-me-btn-container"/>
