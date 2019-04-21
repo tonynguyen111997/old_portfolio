@@ -16,7 +16,7 @@ const NavBar = ({ handleScrollToElement }) => {
 					<NavButton name="About Me" onClick={() => {handleScrollToElement("about-me-container")}}/>
 					<NavButton name="Portfolio" onClick={() => {handleScrollToElement("portfolio-container")}}/>
 					<NavButton name="Skills" onClick={() => {handleScrollToElement("skills-container")}}/>
-					<NavButton name="Resume" />
+					<NavButton name="Resume" onClick={() => window.open('https://github.com/tonynguyen111997/portfolio/files/3100946/Tony_Nguyen_Resume.pdf')}/>
 				</div>
 			</nav>
 		</div>
